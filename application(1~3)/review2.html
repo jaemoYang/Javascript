@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>review2</title>
+<script>
+    var appleNum = prompt("사과를 몇개 구매하시겠어요?","");
+    var grapeNum = prompt("포도를 몇개 구매하시겠어요?","");
+    var pearNum = prompt("배는 몇가 구매하시겠어요?","");
+    var mandarinNum = prompt("귤은 몇개를 구매하시겠어요?","");
+
+    var applePrice = 1000;
+    var grapePrice = 3000;
+    var pearPrice = 2000;
+    var mandarinPrice = 500;
+
+    var total = (appleNum*applePrice) + (grapeNum*grapePrice) + (pearNum*pearPrice) + (mandarinNum*mandarinPrice);
+    var discount = total*0.9;
+
+    if(grapeNum>=3){
+        document.write("포도를 3개 이상 구매하여서 총 구매가격은 " + discount + "원 입니다.", "<br>");
+    }
+    else{
+        document.write("포도를 3개 미만으로 구매하셔서 총 구매가격은 " + total + "원 입니다.", "<br>");
+    }
+    document.write("감사합니다.");
+
+</script>
+</head>
+
+<body>
+    
+</body>
+</html>
